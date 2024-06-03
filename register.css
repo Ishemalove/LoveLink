@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
+
+body {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("dark-style-valentines-day-celebration.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Readex Pro", sans-serif;
+  height: 100vh;
+}
+.bar{
+  font-size: 0.8cm;
+  color: #fff;
+  font-weight: bold;
+  padding:7px 13px ;
+  border-radius: 3px ;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  height: 100px;
+  box-shadow: 1px 3px 5px rgb(22, 22, 22); 
+}
+.bar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bar li{
+  margin-right: 40px;
+  margin-top: 20px;
+}
+.bar a{
+  color: white;
+  text-decoration: none;
+  
+}
+.bar a:hover{
+  color:rgb(187, 12, 12);
+}
+.bar a:active{
+  background-color: rgb(148, 14, 14);
+  
+}
+@media (max-width: 768px) {
+.bar {
+  height: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.bar ul {
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar li {
+  margin-right: 0;
+  margin-top: 10px;
+}
+}
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  background: black;
+  border-radius: 10px;
+  box-shadow: 3px 4px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 450px;
+  padding: 20px 0;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-y: scroll;
+  margin-top: 300px;
+}
+
+.form-content h2 {
+  color: white;
+  font-size: 55px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-content h2 a {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-content h3 {
+  color: #ffffff;
+  font-size: 25px;
+  margin-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.form-content h4 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.form-content p {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-content p a {
+  text-decoration: underline;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.main-informations input {
+  color: white;
+  font-weight: bold;
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px 0 0;
+  border: 2px solid white;
+  box-shadow: 3px 1px 5px rgba(255,0,0, 1);
+  background: transparent;
+  transition: 0.3s;
+  outline: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+::placeholder {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.radio input[type="radio"] {
+  display: none;
+}
+
+.radio input[type="checkbox"] {
+  display: none;
+}
+
+.gender div {
+  display: inline-block;
+  margin: 5px;
+}
+
+.hobbies div{
+  display: inline-block;
+  margin: 5px;
+}
+
+.radio div label span {
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  border: 2px white solid;
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: #ffffff;
+  font-size: 15px;
+  transition: 0.5s all;
+  font-weight: bold;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.radio div label input[type="radio"]:checked ~ span {
+  background: white;
+  color:red;
+  box-shadow: 0 2px 20px white;
+}
+
+.radio div label input[type="checkbox"]:checked ~ span {
+  background: white;
+  color: red;
+  box-shadow: 0 2px 20px white;
+}
+
+input:focus {
+  transform: scale(1.1);
+  border: 2px solid red;
+}
+
+.form-container .form-content .btn-login {
+  background-color: red;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid white;
+  margin: 80px 0px 20px 0;
+  transition: 0.5s;
+  border:none;
+  padding: 10px 20px;
+  width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  .form-container {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+  }
+}

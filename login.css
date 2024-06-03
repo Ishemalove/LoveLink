@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
+
+body {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Readex Pro", sans-serif;
+  height: 100vh;
+}
+.bar{
+  font-size: 0.8cm;
+  color: #fff;
+  font-weight: bold;
+  padding:7px 13px ;
+  border-radius: 3px ;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  height: 100px;
+  box-shadow: 1px 3px 5px rgb(22, 22, 22); ;
+}
+.bar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bar li{
+  margin-right: 40px;
+  margin-top: 20px;
+}
+.bar a{
+  color: white;
+  text-decoration: none;
+  
+}
+.bar a:hover{
+  color:rgb(187, 12, 12);
+}
+.bar a:active{
+  background-color: rgb(148, 14, 14);
+  
+}
+@media (max-width: 768px) {
+.bar {
+  height: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.bar ul {
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar li {
+  margin-right: 0;
+  margin-top: 10px;
+}
+}
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  background-color:black;
+  border-radius: 10px;
+  box-shadow: 3px 4px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 450px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.form-content h2 a {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.form-content p {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-content p a {
+  text-decoration: underline;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.form-container .form-content .btn-login {
+  background:red;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 3px 0px 10px black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 30px;
+  border:none;
+  transition: 0.5s;
+  margin-top: 50px;
+}
+
+.form-container .form-content input {
+  color: white;
+  font-weight: bold;
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px 0 0;
+  border: 2px solid white;
+  background: transparent;
+  transition: 0.3s;
+  outline: none;
+  margin-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+::placeholder {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input:focus {
+  transform: scale(1.1);
+}
+
+.btn-login:hover,
+.btn-login:active {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+  .form-container {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+  }
+}
